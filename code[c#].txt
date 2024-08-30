@@ -1,0 +1,2289 @@
+public void sell()
+{
+    Console.Clear();
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("Welcome to seller page");
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine("Are you a new user");
+    Console.WriteLine("1.REGISTER     2.LOGIN");
+    Console.ForegroundColor = ConsoleColor.White;
+    a1 = Convert.ToInt32(Console.ReadLine());
+    if (a1 == 1)
+    {
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Please Kindly fill the Form to Register");
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Name             :");
+        Console.ForegroundColor = ConsoleColor.White;
+        sname = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Contact number   :");
+        Console.ForegroundColor = ConsoleColor.White;
+        scontact = Convert.ToInt64(Console.ReadLine());
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Aadhar number    :");
+        Console.ForegroundColor = ConsoleColor.White;
+        saadhar = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Email id         :");
+        Console.ForegroundColor = ConsoleColor.White;
+        semail = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("User id          :");
+        Console.ForegroundColor = ConsoleColor.White;
+        sid = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Password         :");
+        Console.ForegroundColor = ConsoleColor.White;
+        spass = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Sucessfully Register");
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
+        Console.WriteLine("Do you want to login\n1.Login in\n2.Back\n3.Exit");
+        Console.ForegroundColor = ConsoleColor.White;
+        a2 = Convert.ToInt32(Console.ReadLine());
+        Console.Clear();
+        if (a2 == 1)
+        {
+        Z:
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("User id : ");
+            Console.ForegroundColor = ConsoleColor.White;
+            u = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("Password :");
+            Console.ForegroundColor = ConsoleColor.White;
+            p = Console.ReadLine();
+            Console.Clear();
+            if (sid == u && spass == p)
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Welcome to login portal");
+                Console.WriteLine(" ");
+                Console.WriteLine("Enter the type of the property you want to sell\n1.Land\n2.House\n3.Gold\n4.Vehicles");
+                Console.ForegroundColor = ConsoleColor.White;
+                a3 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                switch (a3)
+                {
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your land details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :" );
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn =Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :" );
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc =Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land area   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land length :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        ll = Convert.ToInt32(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your House details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("House area  :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea =Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("No.of rooms :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        ll = Convert.ToInt32(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("House cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 3:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your Gold details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Gold Quantity  :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Gold cost      :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 4:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your vehicle details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("vehicle type   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("vehicle cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    default:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Invalid Entry");
+                        break;
+                }
+               
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid credentials");
+                goto Z;
+            }
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("Prefer your role\n\n1.SELLER\n2.BUYER\n3.MEDIATOR\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            a = Convert.ToInt32(Console.ReadLine());
+            if (a == 1)
+            {
+                mediator o = new mediator();
+                o.sell();
+            }
+            else if (a == 2)
+            {
+                mediator o = new mediator();
+                o.buy();
+            }
+            else if (a == 3)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Welcome to Mediator page");
+                Console.WriteLine();
+                Console.WriteLine("Are you a new user");
+                Console.WriteLine("1.REGISTER    2.LOGIN");
+                Console.ForegroundColor = ConsoleColor.White;
+                a1 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                if (a1 == 1)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Please Kindly fill the Form to Register");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Name             :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sname = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Contact number   :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    scontact = Convert.ToInt64(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Aadhar number    :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    saadhar = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Email id         :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    semail = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("User id          :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sid = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Password         :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    spass = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Sucessfully Register");
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("Do you want to login\n1.sign in\n2.back\n3.Exit");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    a2 = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+                    if (a2 == 1)
+                    {
+                        w:
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("User id : ");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        u = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Password :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        p = Console.ReadLine();
+                        Console.Clear();
+                        if (sid == u && spass == p)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Welcome to login portal");
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            int p1=Convert.ToInt32(Console.ReadLine());
+                            Console.Clear() ;
+                            if(p1==1)
+                            {
+                                switch(a3)
+                                {
+                                    case 1:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :"+sn);
+                                        Console.WriteLine("Contact number     :"+sc);
+                                        Console.WriteLine("Property type      : land");
+                                        Console.WriteLine("Land area          :"+larea);
+                                        Console.WriteLine("land length        :"+ll);
+                                        Console.WriteLine("Cost               :"+lcost);
+
+                                            break;
+                                    case 2:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :"+sn);
+                                        Console.WriteLine("Contact number     :"+sc);
+                                        Console.WriteLine("Property type      : House");
+                                        Console.WriteLine("house area         :"+larea);
+                                        Console.WriteLine("Rooms              :"+ll);
+                                        Console.WriteLine("Cost               :"+lcost);
+                                        break;
+                                    case 3:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :"+sn);
+                                        Console.WriteLine("Contact number     :"+sc);
+                                        Console.WriteLine("Property type      : Gold");
+                                        Console.WriteLine("Gold Quanity       :"+larea);
+                                        Console.WriteLine("Cost               :"+lcost);
+                                        break;
+                                    case 4:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :"+sn);
+                                        Console.WriteLine("Contact number     :"+sc);
+                                        Console.WriteLine("Property type      : Vehicles");
+                                        Console.WriteLine("Vehicle type       :"+larea);
+                                        Console.WriteLine("Cost               :"+lcost);
+                                        break;
+                                    default:
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Invalid Entry");
+                                        break;
+                                        
+                                }
+                                
+
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE BUYERS");
+                            }
+
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Invalid credentials");
+                            goto w;
+                            
+                        }
+                    }
+                    else if (a2 == 2)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Thank you for registering");
+                    }
+                    else if (a2 == 3)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Existing");
+                        Console.Clear();
+                    }
+
+
+                }
+                else if(a1==2)
+                {
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("User id : ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    u = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Password :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    p = Console.ReadLine();
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("Welcome to login portal");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    int p1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+                    if (p1 == 1)
+                    {
+                        switch (a3)
+                        {
+                            case 1:
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Seller Details Available");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Name               :" + sn);
+                                Console.WriteLine("Contact number     :" + sc);
+                                Console.WriteLine("Property type      : land");
+                                Console.WriteLine("Land area          :" + larea);
+                                Console.WriteLine("land length        :" + ll);
+                                Console.WriteLine("Cost               :" + lcost);
+                                break;
+                            case 2:
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Seller Details Available");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Name               :" + sn);
+                                Console.WriteLine("Contact number     :" + sc);
+                                Console.WriteLine("Property type      : House");
+                                Console.WriteLine("house area         :" + larea);
+                                Console.WriteLine("Rooms              :" + ll);
+                                Console.WriteLine("Cost               :" + lcost);
+                                break;
+                            case 3:
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Seller Details Available");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Name               :" + sn);
+                                Console.WriteLine("Contact number     :" + sc);
+                                Console.WriteLine("Property type      : Gold");
+                                Console.WriteLine("Gold Quanity       :" + larea);
+                                Console.WriteLine("Cost               :" + lcost);
+                                break;
+                            case 4:
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Seller Details Available");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Name               :" + sn);
+                                Console.WriteLine("Contact number     :" + sc);
+                                Console.WriteLine("Property type      : Vehicles");
+                                Console.WriteLine("Vehicle type       :" + larea);
+                                Console.WriteLine("Cost               :" + lcost);
+                                break;
+                            default:
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Invalid Entry");
+                                break;
+
+                        }
+
+
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE BUYERS");
+                    }
+                }
+            }
+        }
+        else if (a2 == 2)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Thanks you for registration");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Prefer your role\n\n1.SELLER\n2.BUYER\n3.MEDIATOR\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            a = Convert.ToInt32(Console.ReadLine());
+            if (a == 1)
+            {
+                mediator o = new mediator();
+                o.sell();
+            }
+            else if (a == 2)
+            {
+                mediator o = new mediator();
+                o.buy();
+            }
+            else if (a == 3)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Welcome to Mediator page");
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Are you a new user");
+                Console.WriteLine("1.REGISTER    2.LOGIN");
+                Console.ForegroundColor = ConsoleColor.White;
+                a1 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                if (a1 == 1)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Please Kindly fill the Form to Register");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Name             :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sname = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Contact number   :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    scontact = Convert.ToInt64(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Aadhar number    :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    saadhar = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Email id         :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    semail = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("User id          :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sid = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Password         :");
+                    Console.ForegroundColor = ConsoleColor. White;
+                    spass = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Sucessfully Register");
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("Do you want to login\n1.sign in\n2.back\n3.Exit");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    a2 = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+                    if (a2 == 1)
+                    {
+                    w:
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("User id : ");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        u = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Password :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        p = Console.ReadLine();
+                        Console.Clear();
+                        if (sid == u && spass == p)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Welcome to login portal");
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            int p1 = Convert.ToInt32(Console.ReadLine());
+                            Console.Clear();
+                            if (p1 == 1)
+                            {
+                                switch (a3)
+                                {
+                                    case 1:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : land");
+                                        Console.WriteLine("Land area          :" + larea);
+                                        Console.WriteLine("land length        :" + ll);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    case 2:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : House");
+                                        Console.WriteLine("house area         :" + larea);
+                                        Console.WriteLine("Rooms              :" + ll);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    case 3:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : Gold");
+                                        Console.WriteLine("Gold Quanity       :" + larea);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    case 4:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : Vehicles");
+                                        Console.WriteLine("Vehicle type       :" + larea);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    default:
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Invalid Entry");
+                                        break;
+
+                                }
+
+
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE BUYERS");
+                            }
+
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Invalid credentials");
+                            goto w;
+                        }
+                            }
+                            else if (a2 == 2)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                Console.WriteLine("Thank you for registering");
+                            }
+                            else if (a2 == 3)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                Console.WriteLine("Existing");
+                                Console.Clear();
+                            }
+
+
+                        }
+                        else if (a1 == 2)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.Write("User id : ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            u = Console.ReadLine();
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.Write("Password :");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            p = Console.ReadLine();
+                            Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Welcome to login portal");
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            int p1 = Convert.ToInt32(Console.ReadLine());
+                            Console.Clear();
+                            if (p1 == 1)
+                            {
+                                switch (a3)
+                                {
+                                    case 1:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : land");
+                                        Console.WriteLine("Land area          :" + larea);
+                                        Console.WriteLine("land length        :" + ll);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    case 2:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : House");
+                                        Console.WriteLine("house area         :" + larea);
+                                        Console.WriteLine("Rooms              :" + ll);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    case 3:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : Gold");
+                                        Console.WriteLine("Gold Quanity       :" + larea);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    case 4:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : Vehicles");
+                                        Console.WriteLine("Vehicle type       :" + larea);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    default:
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Invalid Entry");
+                                        break;
+
+                                }
+
+
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE BUYERS");
+                            }
+                        }
+                    }
+
+                }
+                else if (a2 == 3)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Existing..");
+                    Console.Clear();
+                }
+            }
+            else if (a1 == 2)
+            {
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("User id : ");
+                Console.ForegroundColor = ConsoleColor.White;
+                u = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("Password :");
+                Console.ForegroundColor = ConsoleColor.White;
+                p = Console.ReadLine();
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Welcome to login portal");
+                Console.WriteLine(" ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Enter the type of the property you want to sell\n1.Land\n2.House\n3.Gold\n4.Vehicle");
+                a3 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                switch (a3)
+                {
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your land details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land area   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land length :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        ll = Convert.ToInt32(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your House details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("House area  :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("No.of rooms :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        ll = Convert.ToInt32(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("House cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 3:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your Gold details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Gold Quantity  :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Gold cost      :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 4:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your vehicle details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("vehicle type   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("vehicle cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    default:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Invalid Entry");
+                        break;
+                }
+                Console.WriteLine();
+                Console.ForegroundColor= ConsoleColor.Yellow;
+                Console.WriteLine("Prefer your role\n\n1.SELLER\n2.BUYER\n3.MEDIATOR\n");
+                a = Convert.ToInt32(Console.ReadLine());
+                if (a == 1)
+                {
+                    mediator o = new mediator();
+                    o.sell();
+                }
+                else if (a == 2)
+                {
+                    mediator o = new mediator();
+                    o.buy();
+                }
+                else if (a == 3)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Welcome to Mediator page");
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Are you a new user");
+                    Console.WriteLine("1.REGISTER    2.LOGIN");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    a1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+                    if (a1 == 1)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Please Kindly fill the Form to Register");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name             :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sname = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact number   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        scontact = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Aadhar number    :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        saadhar = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Email id         :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        semail = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("User id          :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sid = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Password         :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        spass = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Sucessfully Register");
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Do you want to login\n1.sign in\n2.back\n3.Exit");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        a2 = Convert.ToInt32(Console.ReadLine());
+                        Console.Clear();
+                        if (a2 == 1)
+                        {
+                        w:
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.Write("User id : ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            u = Console.ReadLine();
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.Write("Password :");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            p = Console.ReadLine();
+                            Console.Clear();
+                            if (sid == u && spass == p)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Welcome to login portal");
+                                Console.ForegroundColor = ConsoleColor.Yellow;
+                                Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                int p1 = Convert.ToInt32(Console.ReadLine());
+                                Console.Clear();
+                                if (p1 == 1)
+                                {
+                                    switch (a3)
+                                    {
+                                        case 1:
+                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                            Console.WriteLine("Seller Details Available");
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Name               :" + sn);
+                                            Console.WriteLine("Contact number     :" + sc);
+                                            Console.WriteLine("Property type      : land");
+                                            Console.WriteLine("Land area          :" + larea);
+                                            Console.WriteLine("land length        :" + ll);
+                                            Console.WriteLine("Cost               :" + lcost);
+                                            break;
+                                        case 2:
+                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                            Console.WriteLine("Seller Details Available");
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Name               :" + sn);
+                                            Console.WriteLine("Contact number     :" + sc);
+                                            Console.WriteLine("Property type      : House");
+                                            Console.WriteLine("house area         :" + larea);
+                                            Console.WriteLine("Rooms              :" + ll);
+                                            Console.WriteLine("Cost               :" + lcost);
+                                            break;
+                                        case 3:
+                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                            Console.WriteLine("Seller Details Available");
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Name               :" + sn);
+                                            Console.WriteLine("Contact number     :" + sc);
+                                            Console.WriteLine("Property type      : Gold");
+                                            Console.WriteLine("Gold Quanity       :" + larea);
+                                            Console.WriteLine("Cost               :" + lcost);
+                                            break;
+                                        case 4:
+                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                            Console.WriteLine("Seller Details Available");
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Name               :" + sn);
+                                            Console.WriteLine("Contact number     :" + sc);
+                                            Console.WriteLine("Property type      : Vehicles");
+                                            Console.WriteLine("Vehicle type       :" + larea);
+                                            Console.WriteLine("Cost               :" + lcost);
+                                            break;
+                                        default:
+                                            Console.ForegroundColor = ConsoleColor.Red;
+                                            Console.WriteLine("Invalid Entry");
+                                            break;
+
+                                    }
+
+
+                                }
+                                else
+                                {
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE BUYERS");
+                                }
+
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Invalid credentials");
+                                goto w;
+
+                            }
+                        }
+                        else if (a2 == 2)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("Thank you for registering");
+                        }
+                        else if (a2 == 3)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("Existing");
+                            Console.Clear();
+                        }
+
+
+                    }
+                    else if (a1 == 2)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("User id : ");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        u = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Password :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        p = Console.ReadLine();
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Welcome to login portal");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        int p1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Clear();
+                        if (p1 == 1)
+                        {
+                            switch (a3)
+                            {
+                                case 1:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : land");
+                                    Console.WriteLine("Land area          :" + larea);
+                                    Console.WriteLine("land length        :" + ll);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 2:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : House");
+                                    Console.WriteLine("house area         :" + larea);
+                                    Console.WriteLine("Rooms              :" + ll);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 3:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : Gold");
+                                    Console.WriteLine("Gold Quanity       :" + larea);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 4:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : Vehicles");
+                                    Console.WriteLine("Vehicle type       :" + larea);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                default:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Invalid Entry");
+                                    break;
+
+                            }
+
+
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE BUYERS");
+                        }
+                    }
+                }
+            }
+        }
+        public void mediate()
+{
+    Console.Clear();
+    int comm, cost, costs, bprice;
+    long mcontact, mcontact1;
+    string mname, mname1, protype, protype1;
+    Console.ForegroundColor= ConsoleColor.Blue;
+    Console.WriteLine("Welcome to Mediator page");
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Magenta;
+    Console.WriteLine("Are you a new user");
+    Console.WriteLine("1.REGISTER     2.LOGIN");
+    a1 = Convert.ToInt32(Console.ReadLine());
+    Console.ForegroundColor = ConsoleColor.White;
+    Console.Clear();
+    if (a1 == 1)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Please Kindly fill the Form to Register");
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Name             :");
+        Console.ForegroundColor = ConsoleColor.White;
+        sname = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Contact number   :");
+        scontact = Convert.ToInt64(Console.ReadLine());
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Aadhar number    :");
+        saadhar = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Email id         :");
+        semail = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("User id          :");
+        sid = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Password         :");
+        spass = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Sucessfully Register");
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("Do you want to login\n1.sign in\n2.back\n3.Exit");
+        Console.ForegroundColor = ConsoleColor.White;
+        a2 = Convert.ToInt32(Console.ReadLine());
+        Console.Clear();
+        if (a2 == 1)
+        {
+        y:
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("User id : ");
+            Console.ForegroundColor = ConsoleColor.White;
+            u = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("Password :");
+            Console.ForegroundColor = ConsoleColor.White;
+            p = Console.ReadLine();
+            Console.Clear();
+            if (sid == u && spass == p)
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Welcome to login portal");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Enter the property details you want to mediate");
+                Console.WriteLine("Enter seller details");
+                Console.Write("Name of the seller :");
+                mname = Console.ReadLine();
+                Console.Write("Contact number     :");
+                mcontact = Convert.ToInt64(Console.ReadLine());
+                Console.Write("Type of property   :");
+                protype = Console.ReadLine();
+                Console.Write("Cost of property   :");
+                cost = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("");
+                Console.Write("Enter your commission :");
+                comm = Convert.ToInt32(Console.ReadLine());
+                bprice = cost + comm;
+                Console.WriteLine("---------------------------------------------------");
+                Console.WriteLine("Enter buyer details");
+                Console.Write("Name of the buyer :");
+                mname1 = Console.ReadLine();
+                Console.Write("Contact number    :");
+                mcontact1 = Convert.ToInt64(Console.ReadLine());
+                Console.Write("Type of property  :");
+                protype1 = Console.ReadLine();
+                Console.Write("Cost of property  :");
+                costs = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                if (protype == protype1 && bprice == costs)
+                {
+                    Console.WriteLine("          SELLER BILLING        ");
+                    Console.WriteLine("   Name      : " + mname);
+                    Console.WriteLine("   Contact   : " + mcontact);
+                    Console.WriteLine("   Property  : " + protype);
+                    Console.WriteLine("   Amount    : " + cost);
+                    Console.WriteLine("----------------------------------------------------");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("          BUYER BILLING        ");
+                    Console.WriteLine("   Name      : " + mname1);
+                    Console.WriteLine("   Contact   : " + mcontact1);
+                    Console.WriteLine("   Property  : " + protype1);
+                    Console.WriteLine("   Amount    : " + bprice);
+                }
+                else
+                {
+                    Console.WriteLine("NO SELLER AND BUYER REQUIREMENTS MATCHED....");
+                }
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid credentials");
+                goto y;
+            }
+            Console.WriteLine("Prefer your role\n\n1.SELLER\n2.BUYER\n3.MEDIATOR\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            a = Convert.ToInt32(Console.ReadLine());
+            if (a == 1)
+            {
+                mediator o = new mediator();
+                o.sell();
+
+            }
+            else if (a == 2)
+            {
+                mediator o = new mediator();
+                o.buy();
+            }
+        }
+        else if (a2 == 2)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Thank you for registering");
+        }
+        else if (a2 == 3)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Existing");
+            Console.Clear();
+        }
+
+    }
+    else if (a1 == 2)
+    {
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("User id : ");
+        Console.ForegroundColor = ConsoleColor.White;
+        u = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Password :");
+        Console.ForegroundColor = ConsoleColor.White;
+        p = Console.ReadLine();
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("Welcome to login portal");
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine("Enter the property details you want to mediate");
+        Console.WriteLine("Enter seller details");
+        Console.Write("Name of the seller :");
+        mname = Console.ReadLine();
+        Console.Write("Contact number     :");
+        mcontact = Convert.ToInt64(Console.ReadLine());
+        Console.Write("Type of property   :");
+        protype = Console.ReadLine();
+        Console.Write("Cost of property   :");
+        cost = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+        Console.Write("Enter your commission :");
+        comm = Convert.ToInt32(Console.ReadLine());
+        bprice = cost + comm;
+        Console.WriteLine("---------------------------------------------------");
+        Console.WriteLine("Enter buyer details");
+        Console.Write("Name of the buyer :");
+        mname1 = Console.ReadLine();
+        Console.Write("Contact number    :");
+        mcontact1 = Convert.ToInt64(Console.ReadLine());
+        Console.Write("Type of property  :");
+        protype1 = Console.ReadLine();
+        Console.Write("Cost of property  :");
+        costs = Convert.ToInt32(Console.ReadLine());
+        Console.Clear();
+        if(protype==protype1 && bprice==costs)
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("          SELLER BILLING        ");
+            Console.WriteLine("   Name      : " + mname);
+            Console.WriteLine("   Contact   : " + mcontact);
+            Console.WriteLine("   Property  : " + protype);
+            Console.WriteLine("   Amount    : " + cost);
+            Console.WriteLine("----------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("          BUYER BILLING        ");
+            Console.WriteLine("   Name      : " + mname1);
+            Console.WriteLine("   Contact   : " + mcontact1);
+            Console.WriteLine("   Property  : " + protype1);
+            Console.WriteLine("   Amount    : " + bprice);
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("No Buyer and sellers Requriments Matched........"); 
+            
+        }
+        Console.WriteLine("Prefer your role\n\n1.SELLER\n2.BUYER\n3.MEDIATOR\n");
+        Console.ForegroundColor = ConsoleColor.White;
+        a = Convert.ToInt32(Console.ReadLine());
+        if (a == 1)
+        {
+            mediator o = new mediator();
+            o.sell();
+
+        }
+        else if (a == 2)
+        {
+            mediator o = new mediator();
+            o.buy();
+        }
+    }
+}
+public void buy()
+{
+    Console.Clear();
+    Console.ForegroundColor = ConsoleColor.Blue;
+    Console.WriteLine("Welcome to buyer page");
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine("Are you a new user");
+    Console.WriteLine("1.REGISTER     2.LOGIN");
+    Console.ForegroundColor = ConsoleColor.White;
+    a1 = Convert.ToInt32(Console.ReadLine());
+    Console.Clear();
+    if (a1 == 1)
+    {
+       
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine("Please Kindly fill the Form to Register");
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Name             :");
+        Console.ForegroundColor = ConsoleColor.White;
+        sname = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Contact number   :");
+        Console.ForegroundColor = ConsoleColor.White;
+        scontact = Convert.ToInt64(Console.ReadLine());
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Aadhar number    :");
+        Console.ForegroundColor = ConsoleColor.White;
+        saadhar = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Email id         :");
+        Console.ForegroundColor = ConsoleColor.White;
+        semail = Console.ReadLine();
+        Console.Write("User id          :");
+        Console.ForegroundColor = ConsoleColor.White;
+        sid = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.Write("Password         :");
+        Console.ForegroundColor = ConsoleColor.White;
+        spass = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Sucessfully Register");
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine("Do you want to login\n1.Login in\n2.Back\n3.Exit");
+        Console.ForegroundColor = ConsoleColor.White;
+        a2 = Convert.ToInt32(Console.ReadLine());
+        Console.Clear();
+        if (a2 == 1)
+        {
+            X:
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("User id : ");
+            Console.ForegroundColor = ConsoleColor.White;
+            u = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("Password :");
+            Console.ForegroundColor = ConsoleColor.White;
+            p = Console.ReadLine();
+            Console.Clear();
+            if (sid == u && spass == p)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Welcome to login portal");
+                Console.WriteLine(" ");
+                Console.WriteLine("Enter the type of the property you want to buy\n1.Land\n2.House\n3.Gold\n4.Vehicle");
+                Console.ForegroundColor = ConsoleColor.White;
+                a3 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                switch (a3)
+                {
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Upload your land details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land area   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land length :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        ll = Convert.ToInt32(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Land cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.WriteLine("Upload your House details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("House area  :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("No.of rooms :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        ll = Convert.ToInt32(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("House cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 3:
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.WriteLine("Upload your Gold details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Gold Quantity  :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Gold cost      :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 4:
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.WriteLine("Upload your vehicle details");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name        :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sn = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact     :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sc = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("vehicle type   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        larea = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("vehicle cost   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        lcost = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    default:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Invalid Entry");
+                        break;
+                }
+
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid credentials");
+                goto X;
+            }
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Prefer your role\n\n1.SELLER\n2.BUYER\n3.MEDIATOR\n");
+            a = Convert.ToInt32(Console.ReadLine());
+            if (a == 1)
+            {
+                mediator o = new mediator();
+                o.sell();
+            }
+            else if (a == 2)
+            {
+                mediator o = new mediator();
+                o.buy();
+            }
+            else if (a == 3)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Welcome to Mediator page");
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Are you a new user");
+                Console.WriteLine("1.YES     2.No");
+                Console.ForegroundColor = ConsoleColor.White;
+                a1 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                if (a1 == 1)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Please Kindly fill the Form to Register");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Name             :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sname = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Contact number   :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    scontact = Convert.ToInt64(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Aadhar number    :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    saadhar = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Email id         :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    semail = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("User id          :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sid = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Password         :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    spass = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Sucessfully Register");
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Do you want to login\n1.sign in\n2.back\n3.Exit");
+                    a2 = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+                    if (a2 == 1)
+                    {
+                    w:
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("User id : ");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        u = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Password :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        p = Console.ReadLine();
+                        Console.Clear();
+                        if (sid == u && spass == p)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            Console.WriteLine("Welcome to login portal");
+                            Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            int p1 = Convert.ToInt32(Console.ReadLine());
+                            Console.Clear();
+                            if (p1 == 2)
+                            {
+                                switch (a3)
+                                {
+                                    case 1:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : land");
+                                        Console.WriteLine("Land area          :" + larea);
+                                        Console.WriteLine("land length        :" + ll);
+                                        Console.WriteLine("Cost               :" + lcost);
+
+                                        break;
+                                    case 2:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : House");
+                                        Console.WriteLine("house area         :" + larea);
+                                        Console.WriteLine("Rooms              :" + ll);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    case 3:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : Gold");
+                                        Console.WriteLine("Gold Quanity       :" + larea);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    case 4:
+                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                        Console.WriteLine("Seller Details Available");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Name               :" + sn);
+                                        Console.WriteLine("Contact number     :" + sc);
+                                        Console.WriteLine("Property type      : Vehicles");
+                                        Console.WriteLine("Vehicle type       :" + larea);
+                                        Console.WriteLine("Cost               :" + lcost);
+                                        break;
+                                    default:
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Invalid Entry");
+                                        break;
+
+                                }
+
+
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE SELLERS");
+                            }
+
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Invalid credentials");
+                            goto w;
+
+                        }
+                    }
+                    else if (a2 == 2)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Thank you for registering");
+                    }
+                    else if (a2 == 3)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Existing");
+                        Console.Clear();
+                    }
+
+
+                }
+                else if (a1 == 2)
+                {
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("User id : ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    u = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Password :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    p = Console.ReadLine();
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine("Welcome to login portal");
+                    Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                    int p1 = Convert.ToInt32(Console.ReadLine());
+                    if (p1 == 2)
+                    {
+                        switch (a3)
+                        {
+                            case 1:
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Seller Details Available");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Name               :" + sn);
+                                Console.WriteLine("Contact number     :" + sc);
+                                Console.WriteLine("Property type      : land");
+                                Console.WriteLine("Land area          :" + larea);
+                                Console.WriteLine("land length        :" + ll);
+                                Console.WriteLine("Cost               :" + lcost);
+                                break;
+                            case 2:
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Seller Details Available");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Name               :" + sn);
+                                Console.WriteLine("Contact number     :" + sc);
+                                Console.WriteLine("Property type      : House");
+                                Console.WriteLine("house area         :" + larea);
+                                Console.WriteLine("Rooms              :" + ll);
+                                Console.WriteLine("Cost               :" + lcost);
+                                break;
+                            case 3:
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Seller Details Available");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Name               :" + sn);
+                                Console.WriteLine("Contact number     :" + sc);
+                                Console.WriteLine("Property type      : Gold");
+                                Console.WriteLine("Gold Quanity       :" + larea);
+                                Console.WriteLine("Cost               :" + lcost);
+                                break;
+                            case 4:
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("Seller Details Available");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Name               :" + sn);
+                                Console.WriteLine("Contact number     :" + sc);
+                                Console.WriteLine("Property type      : Vehicles");
+                                Console.WriteLine("Vehicle type       :" + larea);
+                                Console.WriteLine("Cost               :" + lcost);
+                                break;
+                            default:
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Invalid Entry");
+                                break;
+
+                        }
+
+
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE SELLERS");
+                    }
+                }
+                }
+            }
+            else if(a2==2)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Thanks you for registration");
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Prefer your role\n\n1.SELLER\n2.BUYER\n3.MEDIATOR\n");
+                Console.ForegroundColor = ConsoleColor.White;
+                a = Convert.ToInt32(Console.ReadLine());
+                if (a == 1)
+                {
+                    mediator o = new mediator();
+                    o.sell();
+                }
+                else if (a == 2)
+                {
+                    mediator o = new mediator();
+                    o.buy();
+                }
+                else if (a == 3)
+                {
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Welcome to Mediator page");
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Are you a new user");
+                    Console.WriteLine("1.YES     2.No");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    a1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+                    if (a1 == 1)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Please Kindly fill the Form to Register");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Name             :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sname = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Contact number   :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        scontact = Convert.ToInt64(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Aadhar number    :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        saadhar = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Email id         :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        semail = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("User id          :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        sid = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Password         :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        spass = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Sucessfully Register");
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.WriteLine("Do you want to login\n1.sign in\n2.back\n3.Exit");
+                        a2 = Convert.ToInt32(Console.ReadLine());
+                        Console.Clear();
+                        if (a2 == 1)
+                        {
+                        w:
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.Write("User id : ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            u = Console.ReadLine();
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.Write("Password :");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            p = Console.ReadLine();
+                            Console.Clear();
+                            if (sid == u && spass == p)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Blue;
+                                Console.WriteLine("Welcome to login portal");
+                                Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                int p1 = Convert.ToInt32(Console.ReadLine());
+                                Console.Clear();
+                                if (p1 == 2)
+                                {
+                                    switch (a3)
+                                    {
+                                        case 1:
+                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                            Console.WriteLine("Seller Details Available");
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Name               :" + sn);
+                                            Console.WriteLine("Contact number     :" + sc);
+                                            Console.WriteLine("Property type      : land");
+                                            Console.WriteLine("Land area          :" + larea);
+                                            Console.WriteLine("land length        :" + ll);
+                                            Console.WriteLine("Cost               :" + lcost);
+                                            break;
+                                        case 2:
+                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                            Console.WriteLine("Seller Details Available");
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Name               :" + sn);
+                                            Console.WriteLine("Contact number     :" + sc);
+                                            Console.WriteLine("Property type      : House");
+                                            Console.WriteLine("house area         :" + larea);
+                                            Console.WriteLine("Rooms              :" + ll);
+                                            Console.WriteLine("Cost               :" + lcost);
+                                            break;
+                                        case 3:
+                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                            Console.WriteLine("Seller Details Available");
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Name               :" + sn);
+                                            Console.WriteLine("Contact number     :" + sc);
+                                            Console.WriteLine("Property type      : Gold");
+                                            Console.WriteLine("Gold Quanity       :" + larea);
+                                            Console.WriteLine("Cost               :" + lcost);
+                                            break;
+                                        case 4:
+                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                            Console.WriteLine("Seller Details Available");
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Name               :" + sn);
+                                            Console.WriteLine("Contact number     :" + sc);
+                                            Console.WriteLine("Property type      : Vehicles");
+                                            Console.WriteLine("Vehicle type       :" + larea);
+                                            Console.WriteLine("Cost               :" + lcost);
+                                            break;
+                                        default:
+                                            Console.ForegroundColor = ConsoleColor.Red;
+                                            Console.WriteLine("Invalid Entry");
+                                            break;
+
+                                    }
+
+
+                                }
+                                else
+                                {
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE SELLERS");
+                                }
+
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Invalid credentials");
+                                goto w;
+
+                            }
+                        }
+                        else if (a2 == 2)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("Thank you for registering");
+                        }
+                        else if (a2 == 3)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("Existing");
+                            Console.Clear();
+                        }
+
+
+                    }
+                    else if (a1 == 2)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("User id : ");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        u = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("Password :");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        p = Console.ReadLine();
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.WriteLine("Welcome to login portal");
+                        Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                        int p1 = Convert.ToInt32(Console.ReadLine());
+                        if (p1 == 2)
+                        {
+                            switch (a3)
+                            {
+                                case 1:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : land");
+                                    Console.WriteLine("Land area          :" + larea);
+                                    Console.WriteLine("land length        :" + ll);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 2:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : House");
+                                    Console.WriteLine("house area         :" + larea);
+                                    Console.WriteLine("Rooms              :" + ll);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 3:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : Gold");
+                                    Console.WriteLine("Gold Quanity       :" + larea);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 4:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : Vehicles");
+                                    Console.WriteLine("Vehicle type       :" + larea);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                default:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Invalid Entry");
+                                    break;
+
+                            }
+
+
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE SELLERS");
+                        }
+                    }
+                }
+            
+            }
+            else if (a2 == 3)
+            {
+                Console.WriteLine("Existing..");
+                Console.Clear();
+            }
+        
+        }
+        else if(a1==2)
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("User id : ");
+            Console.ForegroundColor = ConsoleColor.White;
+            u = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("Password :");
+            Console.ForegroundColor = ConsoleColor.White;
+            p = Console.ReadLine();
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Welcome to login portal");
+            Console.WriteLine(" ");
+            Console.WriteLine("Enter the type of the property you want to buy\n1.Land\n2.House\n3.Gold\n4.Vehicle");
+            Console.ForegroundColor = ConsoleColor.White;
+            a3 = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            switch (a3)
+            {
+                case 1:
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("Upload your land details");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Name        :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sn = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Contact     :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sc = Convert.ToInt64(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Land area   :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    larea = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Land length :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    ll = Convert.ToInt32(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Land cost   :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    lcost = Convert.ToInt32(Console.ReadLine());
+                    break;
+                case 2:
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Upload your House details");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Name        :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sn = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Contact     :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sc = Convert.ToInt64(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("House area  :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    larea = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("No.of rooms :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    ll = Convert.ToInt32(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("House cost   :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    lcost = Convert.ToInt32(Console.ReadLine());
+                    break;
+                case 3:
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Upload your Gold details");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Name        :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sn = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Contact     :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sc = Convert.ToInt64(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Gold Quantity  :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    larea = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Gold cost      :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    lcost = Convert.ToInt32(Console.ReadLine());
+                    break;
+                case 4:
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Upload your vehicle details");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Name        :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sn = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Contact     :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    sc = Convert.ToInt64(Console.ReadLine());
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("vehicle type   :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    larea = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("vehicle cost   :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    lcost = Convert.ToInt32(Console.ReadLine());
+                    break;
+                default:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid Entry");
+                    break;
+            }
+
+        }
+        Console.WriteLine();
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("Prefer your role\n\n1.SELLER\n2.BUYER\n3.MEDIATOR\n");
+        a = Convert.ToInt32(Console.ReadLine());
+        if (a == 1)
+        {
+            mediator o = new mediator();
+            o.sell();
+        }
+        else if (a == 2)
+        {
+            mediator o = new mediator();
+            o.buy();
+        }
+        else if (a == 3)
+            {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Welcome to Mediator page");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Are you a new user");
+            Console.WriteLine("1.YES     2.No");
+            Console.ForegroundColor = ConsoleColor.White;
+            a1 = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            if (a1 == 1)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Please Kindly fill the Form to Register");
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("Name             :");
+                Console.ForegroundColor = ConsoleColor.White;
+                sname = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("Contact number   :");
+                Console.ForegroundColor = ConsoleColor.White;
+                scontact = Convert.ToInt64(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("Aadhar number    :");
+                Console.ForegroundColor = ConsoleColor.White;
+                saadhar = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("Email id         :");
+                Console.ForegroundColor = ConsoleColor.White;
+                semail = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("User id          :");
+                Console.ForegroundColor = ConsoleColor.White;
+                sid = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("Password         :");
+                Console.ForegroundColor = ConsoleColor.White;
+                spass = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sucessfully Register");
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Do you want to login\n1.sign in\n2.back\n3.Exit");
+                a2 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                if (a2 == 1)
+                {
+                w:
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("User id : ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    u = Console.ReadLine();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Password :");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    p = Console.ReadLine();
+                    Console.Clear();
+                    if (sid == u && spass == p)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.WriteLine("Welcome to login portal");
+                        Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        int p1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Clear();
+                        if (p1 == 2)
+                        {
+                            switch (a3)
+                            {
+                                case 1:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : land");
+                                    Console.WriteLine("Land area          :" + larea);
+                                    Console.WriteLine("land length        :" + ll);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 2:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : House");
+                                    Console.WriteLine("house area         :" + larea);
+                                    Console.WriteLine("Rooms              :" + ll);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 3:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : Gold");
+                                    Console.WriteLine("Gold Quanity       :" + larea);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                case 4:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Seller Details Available");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Name               :" + sn);
+                                    Console.WriteLine("Contact number     :" + sc);
+                                    Console.WriteLine("Property type      : Vehicles");
+                                    Console.WriteLine("Vehicle type       :" + larea);
+                                    Console.WriteLine("Cost               :" + lcost);
+                                    break;
+                                default:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Invalid Entry");
+                                    break;
+
+                            }
+
+
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE SELLERS");
+                        }
+
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Invalid credentials");
+                        goto w;
+
+                    }
+                }
+                else if (a2 == 2)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Thank you for registering");
+                }
+                else if (a2 == 3)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Existing");
+                    Console.Clear();
+                }
+
+
+            }
+            else if (a1 == 2)
+            {
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("User id : ");
+                Console.ForegroundColor = ConsoleColor.White;
+                u = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write("Password :");
+                Console.ForegroundColor = ConsoleColor.White;
+                p = Console.ReadLine();
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.WriteLine("Welcome to login portal");
+                Console.WriteLine("Select your Preference\n\n1.Seller\n2.Buyer");
+                int p1 = Convert.ToInt32(Console.ReadLine());
+                if (p1 == 2)
+                {
+                    switch (a3)
+                    {
+                        case 1:
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Seller Details Available");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("Name               :" + sn);
+                            Console.WriteLine("Contact number     :" + sc);
+                            Console.WriteLine("Property type      : land");
+                            Console.WriteLine("Land area          :" + larea);
+                            Console.WriteLine("land length        :" + ll);
+                            Console.WriteLine("Cost               :" + lcost);
+                            break;
+                        case 2:
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Seller Details Available");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("Name               :" + sn);
+                            Console.WriteLine("Contact number     :" + sc);
+                            Console.WriteLine("Property type      : House");
+                            Console.WriteLine("house area         :" + larea);
+                            Console.WriteLine("Rooms              :" + ll);
+                            Console.WriteLine("Cost               :" + lcost);
+                            break;
+                        case 3:
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Seller Details Available");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("Name               :" + sn);
+                            Console.WriteLine("Contact number     :" + sc);
+                            Console.WriteLine("Property type      : Gold");
+                            Console.WriteLine("Gold Quanity       :" + larea);
+                            Console.WriteLine("Cost               :" + lcost);
+                            break;
+                        case 4:
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Seller Details Available");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("Name               :" + sn);
+                            Console.WriteLine("Contact number     :" + sc);
+                            Console.WriteLine("Property type      : Vehicles");
+                            Console.WriteLine("Vehicle type       :" + larea);
+                            Console.WriteLine("Cost               :" + lcost);
+                            break;
+                        default:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Invalid Entry");
+                            break;
+
+                    }
+
+
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("YOU DON'T HAVE ANY AVAILABLE SELLERS");
+                }
+            }
+
+        }
+    }
+}
